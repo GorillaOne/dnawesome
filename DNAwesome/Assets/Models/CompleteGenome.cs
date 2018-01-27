@@ -8,5 +8,6 @@ namespace DNAwesome.Models
     public class CompleteGenome : ScriptableObject
     {
         public List<GeneSet> TheGenome;
+
     }
 }
