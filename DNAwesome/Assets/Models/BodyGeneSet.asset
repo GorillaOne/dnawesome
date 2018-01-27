@@ -18,4 +18,7 @@ MonoBehaviour:
   - GeneOrder: 1
     name: TankBody
     sprite: {fileID: 21300000, guid: 4f5fcc550399b704a8e3a72e2f84d111, type: 3}
+  - GeneOrder: 2
+    name: Sexy
+    sprite: {fileID: 21300000, guid: fb4284704b2fcd34e8cb16b62866065e, type: 3}
   GenePart: 0
