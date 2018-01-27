@@ -14,10 +14,14 @@ namespace DNAwesome
 		public Text C;
 		public DNAController DNAController;
 
+		private void Awake()
+		{
+			DNAController.DNAUpdated += DNAController_DNAUpdated;
+		}
 		// Use this for initialization
 		void Start()
 		{
-			DNAController.DNAUpdated += DNAController_DNAUpdated;
+			
 		}
 
 		// Update is called once per frame
@@ -29,9 +33,26 @@ namespace DNAwesome
 		private void DNAController_DNAUpdated(object sender, System.EventArgs e)
 		{
 			var dna = DNAController.DNA;
-			A.text = dna.GeneList[0].AlleleList[0] + "   " + dna.GeneList[0].AlleleList[1];
-			B.text = dna.GeneList[1].AlleleList[0] + "   " + dna.GeneList[1].AlleleList[1];
-			C.text = dna.GeneList[2].AlleleList[0] + "   " + dna.GeneList[2].AlleleList[1];
+			foreach(var list in dna.GeneList)
+			{
+				list.AlleleList.Sort((a, b) =>
+				{
+					return a.GeneOrder.CompareTo(b.GeneOrder);
+				}); 
+			}
+			List<Text> myTextsBringAllTheBoysToTheYard = new List<Text>();
+			myTextsBringAllTheBoysToTheYard.Add(A);
+			myTextsBringAllTheBoysToTheYard.Add(B);
+			myTextsBringAllTheBoysToTheYard.Add(C); 
+
+			for(int i = 0; i < dna.GeneList.Count; i++)
+			{
+				var text = myTextsBringAllTheBoysToTheYard[i];
+				var geneList = dna.GeneList[i];
+				var allele1 = dna.GeneList[i].AlleleList[0];
+				var allele2 = dna.GeneList[i].AlleleList[1];
+				text.text = allele1.name + allele1.GeneOrder + "   " + allele2.name + allele2.GeneOrder; 
+			}
 		}
 	}
 }

@@ -17,11 +17,14 @@ namespace DNAwesome
 			}
 		}
 		public event EventHandler DNAUpdated;
+		public CompleteGenome CompleteGenome; 
 
 		// Use this for initialization
 		void Start()
 		{
-
+			_myDna = GenerateDefaultDNA();
+			var otherDna = GenerateDefaultDNA();
+			SmashDNA(otherDna); 
 		}
 
 		// Update is called once per frame
@@ -73,6 +76,22 @@ namespace DNAwesome
 			//To Implement: Awesome cracking sounds. 
 			int rand = (int)Math.Round(UnityEngine.Random.value);
 			return gene.AlleleList[rand];
+		}
+
+		private DnaModel GenerateDefaultDNA()
+		{
+			DnaModel newDna = new DnaModel(); 
+			foreach(var set in CompleteGenome.TheGenome)
+			{
+				int max = set.allAlleles.Count;
+				var allele1 = UnityEngine.Random.Range(0, max);
+				var allele2 = UnityEngine.Random.Range(0, max);
+				var newGene = new GeneModel();
+				newGene.AlleleList.Add(set.allAlleles[allele1]);
+				newGene.AlleleList.Add(set.allAlleles[allele2]);
+				newDna.GeneList.Add(newGene); 
+			}
+			return newDna; 
 		}
 	}
 }
