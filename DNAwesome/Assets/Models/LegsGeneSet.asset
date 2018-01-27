@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
-  m_Name: EyesGeneSet
+  m_Name: LegsGeneSet
   m_EditorClassIdentifier: 
   allAlleles:
   - GeneOrder: 0
-    name: Normal
-    sprite: {fileID: 21300000, guid: ef90731dc860cf24ab889a9937432748, type: 3}
+    name: RaptorLegs
+    sprite: {fileID: 21300000, guid: 13227dd80d8b4a746987df2469b4a3dc, type: 3}
   - GeneOrder: 1
-    name: Anime
-    sprite: {fileID: 21300000, guid: b83acecb4ae4f0c4cae4a1994251ac2c, type: 3}
-  - GeneOrder: 1
-    name: Angry
-    sprite: {fileID: 21300000, guid: 9eccbdec65eed29498d6109f62043455, type: 3}
-  GenePart: 2
+    name: TrundleLegs
+    sprite: {fileID: 21300000, guid: 6843d5468d1fce94ca9d691d9da6bc56, type: 3}
+  - GeneOrder: 2
+    name: CrabLegs
+    sprite: {fileID: 21300000, guid: 561be424022d71f478d0486cd8767094, type: 3}
+  GenePart: 4

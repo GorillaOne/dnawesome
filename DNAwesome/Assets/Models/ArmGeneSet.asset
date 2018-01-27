@@ -9,16 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
-  m_Name: EyesGeneSet
+  m_Name: ArmGeneSet
   m_EditorClassIdentifier: 
   allAlleles:
   - GeneOrder: 0
-    name: Normal
-    sprite: {fileID: 21300000, guid: ef90731dc860cf24ab889a9937432748, type: 3}
+    name: PincerArms
+    sprite: {fileID: 21300000, guid: 06f84f705afe08f47aa4b8ef64bf7206, type: 3}
   - GeneOrder: 1
-    name: Anime
-    sprite: {fileID: 21300000, guid: b83acecb4ae4f0c4cae4a1994251ac2c, type: 3}
-  - GeneOrder: 1
-    name: Angry
-    sprite: {fileID: 21300000, guid: 9eccbdec65eed29498d6109f62043455, type: 3}
-  GenePart: 2
+    name: Wings
+    sprite: {fileID: 21300000, guid: c98c82a658cc5194e83f4e2fd640e711, type: 3}
+  - GeneOrder: 2
+    name: Hooves
+    sprite: {fileID: 21300000, guid: 3c0b2bdc4377a5f4f9cbeea5ce19a1be, type: 3}
+  GenePart: 3

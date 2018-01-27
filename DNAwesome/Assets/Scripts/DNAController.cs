@@ -89,7 +89,8 @@ namespace DNAwesome
 				var newGene = new GeneModel();
 				newGene.AlleleList.Add(set.allAlleles[allele1]);
 				newGene.AlleleList.Add(set.allAlleles[allele2]);
-				newDna.GeneList.Add(newGene); 
+                newGene.GeneSet = set;
+                newDna.GeneList.Add(newGene); 
 			}
 			return newDna; 
 		}

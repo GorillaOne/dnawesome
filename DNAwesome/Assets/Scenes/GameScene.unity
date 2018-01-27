@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDNA:
     GeneList: []
+  DnaController: {fileID: 467006132}
   Head: {fileID: 666160430}
   Body: {fileID: 963777467}
   Legs: {fileID: 950957103}

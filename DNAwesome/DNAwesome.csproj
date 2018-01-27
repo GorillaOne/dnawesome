@@ -256,6 +256,9 @@
     <Reference Include="UnityEditor.Android.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.WSA.Extensions">
       <HintPath>Library\UnityAssemblies\UnityEditor.WSA.Extensions.dll</HintPath>
     </Reference>
@@ -286,6 +289,12 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>Library\UnityAssemblies\UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Models\AlleleModel.cs" />
@@ -295,6 +304,7 @@
     <Compile Include="Assets\Models\GeneSet.cs" />
     <Compile Include="Assets\Models\Model.cs" />
     <Compile Include="Assets\MonsterDNADataExpressor.cs" />
+    <Compile Include="Assets\Scripts\CharacterLogic.cs" />
     <Compile Include="Assets\Scripts\DNAController.cs" />
     <Compile Include="Assets\Scripts\DNAExpresser.cs" />
     <Compile Include="Assets\Scripts\GameSceneController.cs" />

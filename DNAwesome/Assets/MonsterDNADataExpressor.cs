@@ -7,6 +7,7 @@ namespace DNAwesome.Models
     public class MonsterDNADataExpressor : MonoBehaviour {
 
         public DnaModel myDNA;
+        public DNAController DnaController;
         public SpriteRenderer Head;
         public SpriteRenderer Body;
         public SpriteRenderer Legs;
@@ -18,8 +19,19 @@ namespace DNAwesome.Models
 
         }
 
+        private void Awake()
+        {
+            DnaController.DNAUpdated += DnaController_DNAUpdated;
+        }
+
+        private void DnaController_DNAUpdated(object sender, System.EventArgs e)
+        {
+            myDNA = DnaController.DNA;
+        }
+
         // Update is called once per frame
         void Update() {
+            myDNA = DnaController.DNA;
             foreach(GeneModel gs in myDNA.GeneList)
             {
                 switch (gs.GeneSet.GenePart)

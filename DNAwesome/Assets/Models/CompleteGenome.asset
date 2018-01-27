@@ -13,3 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TheGenome:
   - {fileID: 11400000, guid: a009f8b421fe823439a568a1f30d43e0, type: 2}
+  - {fileID: 11400000, guid: 54fba7b6b9efad44b86a60d8dfda4f13, type: 2}
+  - {fileID: 11400000, guid: 21db1f9d4ec073742bde13cf8068a598, type: 2}
+  - {fileID: 11400000, guid: f245a2d1fdafe654492abf048ab868c2, type: 2}
+  - {fileID: 11400000, guid: dc57335f7e575a446aced7a6bf0762e0, type: 2}
