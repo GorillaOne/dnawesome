@@ -11,4 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6cb3a04756884b6488e4c7b72a8d2915, type: 3}
   m_Name: CompleteGenome
   m_EditorClassIdentifier: 
-  TheGenome: []
+  TheGenome:
+  - {fileID: 11400000, guid: c839f833154b5f241a9dd930158b1ed8, type: 2}
+  - {fileID: 11400000, guid: 6eb319661b76c1e4497053c5783abb57, type: 2}
+  - {fileID: 11400000, guid: c4d32a9010a6481458bc81562eaa7cfb, type: 2}

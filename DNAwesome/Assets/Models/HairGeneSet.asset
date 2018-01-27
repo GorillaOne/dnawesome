@@ -11,3 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
   m_Name: HairGeneSet
   m_EditorClassIdentifier: 
+  allAlleles:
+  - GeneOrder: 0
+    name: Brown
+  - GeneOrder: 1
+    name: Black
+  - GeneOrder: 2
+    name: Blonde
+  - GeneOrder: 3
+    name: Red

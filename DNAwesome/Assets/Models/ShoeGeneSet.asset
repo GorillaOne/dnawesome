@@ -11,4 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
   m_Name: ShoeGeneSet
   m_EditorClassIdentifier: 
-  allAlleles: []
+  allAlleles:
+  - GeneOrder: 0
+    name: Sneakers
+  - GeneOrder: 1
+    name: Chucks
+  - GeneOrder: 2
+    name: Boots
+  - GeneOrder: 3
+    name: Sandals

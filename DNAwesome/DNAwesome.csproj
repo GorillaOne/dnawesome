@@ -303,6 +303,7 @@
     <Compile Include="Assets\Models\GeneModel.cs" />
     <Compile Include="Assets\Models\GeneSet.cs" />
     <Compile Include="Assets\Models\Model.cs" />
+    <Compile Include="Assets\Scripts\CharacterLogic.cs" />
     <Compile Include="Assets\Scripts\DNAController.cs" />
     <Compile Include="Assets\Scripts\DNAExpresser.cs" />
     <Compile Include="Assets\Scripts\GameSceneController.cs" />

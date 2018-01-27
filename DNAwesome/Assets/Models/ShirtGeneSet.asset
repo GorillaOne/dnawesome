@@ -11,4 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
   m_Name: ShirtGeneSet
   m_EditorClassIdentifier: 
-  allAlleles: []
+  allAlleles:
+  - GeneOrder: 0
+    name: Polo Shirt
+  - GeneOrder: 1
+    name: Tee Shirt
+  - GeneOrder: 2
+    name: Business Shirt
+  - GeneOrder: 3
+    name: Hawaiian Shirt
