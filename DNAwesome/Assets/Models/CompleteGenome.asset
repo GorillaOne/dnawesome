@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Name: CompleteGenome
   m_EditorClassIdentifier: 
   TheGenome:
-  - {fileID: 11400000, guid: c839f833154b5f241a9dd930158b1ed8, type: 2}
-  - {fileID: 11400000, guid: 6eb319661b76c1e4497053c5783abb57, type: 2}
-  - {fileID: 11400000, guid: c4d32a9010a6481458bc81562eaa7cfb, type: 2}
+  - {fileID: 11400000, guid: a009f8b421fe823439a568a1f30d43e0, type: 2}

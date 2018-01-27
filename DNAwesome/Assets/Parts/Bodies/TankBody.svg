@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200"
+   height="200"
+   viewBox="0 0 52.916665 52.916668"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="TankBody.svg"
+   inkscape:export-filename="C:\Users\nubbe\OneDrive\Documents\dnawesome\DNAwesome\Assets\Parts\Bodies\RoundBody.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="0.92.1 r15371">
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect18"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="85.109797"
+     inkscape:cy="156.4086"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-244.08332)">
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:2.91792178;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="M 5.5686238,290.03155 C 3.3100097,283.7756 0.26492365,271.2639 2.9548758,262.47377 5.6448279,253.68364 14.069708,248.61494 22.595732,246.76568 c 8.526025,-1.84926 17.154131,-0.47931 22.761989,6.94065 5.607857,7.41996 8.196253,20.89096 3.095817,28.99626 -5.100436,8.1053 -17.8896,10.84505 -26.771198,12.21498 -8.881597,1.36993 -13.8551021,1.36993 -16.1137162,-4.88602 z"
+       id="path16"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect18"
+       inkscape:original-d="m 6.3551432,296.2875 c -3.0447866,-12.51198 -6.08987523,-25.02368 -9.135265,-37.53513 8.4249098,-5.0688 16.8497908,-10.13749 25.2742328,-15.20583 8.627696,1.36956 17.255801,2.73952 25.883252,4.10968 2.588556,13.47 5.176949,26.94101 7.764974,40.41191 -12.789276,2.73957 -25.578439,5.47932 -38.368113,8.21937 -4.973481,-5.89099 -9.9469861,-11.78137 -11.4190808,0 z"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>

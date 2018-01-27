@@ -9,14 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bfaf59c6b8e83bf4a82052169d20531a, type: 3}
-  m_Name: ShoeGeneSet
+  m_Name: EyesGeneSet
   m_EditorClassIdentifier: 
   allAlleles:
   - GeneOrder: 0
-    name: Sneakers
+    name: Normal
+    sprite: {fileID: 21300000, guid: ef90731dc860cf24ab889a9937432748, type: 3}
   - GeneOrder: 1
-    name: Chucks
-  - GeneOrder: 2
-    name: Boots
-  - GeneOrder: 3
-    name: Sandals
+    name: Angry
+    sprite: {fileID: 21300000, guid: 9eccbdec65eed29498d6109f62043455, type: 3}
+  GenePart: 2

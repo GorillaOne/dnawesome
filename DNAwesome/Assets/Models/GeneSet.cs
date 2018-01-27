@@ -8,7 +8,10 @@ namespace DNAwesome.Models
     [CreateAssetMenu(fileName = "NewGeneSet", menuName = "DNAwesome/Gene Set", order = 0)]
     public class GeneSet : ScriptableObject {
         public List<AlleleModel> allAlleles;
-
+        public PartValue GenePart;
         
     }
+
+
+    public enum PartValue { Body, Head, Eyes, Arms, Legs }
 }

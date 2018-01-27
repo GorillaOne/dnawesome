@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
 namespace DNAwesome.Models
 {
@@ -14,5 +15,6 @@ namespace DNAwesome.Models
         /// </summary>
         public int GeneOrder;
         public string name;
+        public Sprite sprite;
     }
 }
