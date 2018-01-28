@@ -20,13 +20,12 @@ public class SwipeBehaviour : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
     private Vector3 DropPosition;
     private Quaternion DropRotation;
     private Vector3 FlyoffSecond;
+    private bool like;
 
     // Use this for initialization
     void Start () {
         StartPosition = transform.localPosition;
-        snapback = false;
-        elapsedtime = 0;
-        FlyoffSecond = new Vector3(1000, 0, 0);
+        Reset();
 
     }
 	
@@ -49,10 +48,24 @@ public class SwipeBehaviour : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
             transform.localPosition += Time.deltaTime * FlyoffSecond;
             if(elapsedtime>snapbacktime)
             {
-                Destroy(gameObject);
+                if (like)
+                    Like.Invoke();
+                else
+                    Reject.Invoke();
+                Reset();
             }
         }
 	}
+
+    private void Reset()
+    {
+        transform.localPosition = StartPosition;
+        snapback = false;
+        elapsedtime = 0;
+        FlyoffSecond = new Vector3(1000, 0, 0);
+        transform.localRotation = Quaternion.Euler(0, 0, 0);
+        flyoff = false;
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -91,6 +104,5 @@ public class SwipeBehaviour : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        throw new NotImplementedException();
     }
 }

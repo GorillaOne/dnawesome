@@ -5,9 +5,11 @@ namespace DNAwesome
 	public class GameSceneController : MonoBehaviour
 	{
 		public GameObject PlayerGO; 
-		public GameObject OtherGO; 
+		public GameObject OtherGO;
+        public GameObject TinderPrefab;
 		DNAController _playerController;
 		DNAController _otherController;
+        public Canvas Canvas;
 
 
 
@@ -15,9 +17,9 @@ namespace DNAwesome
 		void Start()
 		{
 			_playerController = PlayerGO.GetComponent<DNAController>();
-			_playerController.ResetDNA(); 
-
-			_otherController = OtherGO.GetComponent<DNAController>();
+			_playerController.ResetDNA();
+            //GameObject tp = Instantiate(TinderPrefab, Canvas.transform);
+            _otherController = OtherGO.GetComponentInChildren<DNAController>();
 			_otherController.ResetDNA(); 
 		}
 
