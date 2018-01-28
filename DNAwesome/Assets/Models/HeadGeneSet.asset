@@ -15,10 +15,25 @@ MonoBehaviour:
   - GeneOrder: 0
     name: RoboSnout
     sprite: {fileID: 21300000, guid: 0aa02d31f2db5fc439a29346ae7d27e2, type: 3}
+    AttributeList:
+    - Attribute: 2
+      Strength: 1
   - GeneOrder: 1
     name: EagleHead
     sprite: {fileID: 21300000, guid: 0f7b26ef39067f64da07eb4ea7f7dad2, type: 3}
+    AttributeList:
+    - Attribute: 0
+      Strength: 1
+    - Attribute: 3
+      Strength: 1
+    - Attribute: 1
+      Strength: -1
   - GeneOrder: 2
     name: FlayerHead
     sprite: {fileID: 21300000, guid: e72719acb9f438146a992f4f4043da27, type: 3}
+    AttributeList:
+    - Attribute: 2
+      Strength: 3
+    - Attribute: 5
+      Strength: -2
   GenePart: 1

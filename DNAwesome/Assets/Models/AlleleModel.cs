@@ -38,7 +38,6 @@ namespace DNAwesome.Models
 		Slick,
 		Moxy,
 		Woke,
-		Snark,
 		Mime,
 		Aloof,
 	}

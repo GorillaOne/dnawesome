@@ -15,7 +15,13 @@ MonoBehaviour:
   - GeneOrder: 4
     name: PincerArms
     sprite: {fileID: 21300000, guid: 06f84f705afe08f47aa4b8ef64bf7206, type: 3}
-    AttributeList: []
+    AttributeList:
+    - Attribute: 1
+      Strength: 1
+    - Attribute: 4
+      Strength: 1
+    - Attribute: 5
+      Strength: -1
   - GeneOrder: 1
     name: Wings
     sprite: {fileID: 21300000, guid: c98c82a658cc5194e83f4e2fd640e711, type: 3}
@@ -23,17 +29,31 @@ MonoBehaviour:
   - GeneOrder: 2
     name: Hooves
     sprite: {fileID: 21300000, guid: 3c0b2bdc4377a5f4f9cbeea5ce19a1be, type: 3}
-    AttributeList: []
+    AttributeList:
+    - Attribute: 5
+      Strength: 1
   - GeneOrder: 3
     name: Tentacles
     sprite: {fileID: 21300000, guid: b26d881ff6a29c64a8714d0c3afc39d4, type: 3}
-    AttributeList: []
+    AttributeList:
+    - Attribute: 1
+      Strength: 3
+    - Attribute: 3
+      Strength: -1
+    - Attribute: 0
+      Strength: -1
   - GeneOrder: 5
     name: BeefyArms
     sprite: {fileID: 21300000, guid: 278d66d79cba451478a288a9c2c44df2, type: 3}
-    AttributeList: []
-  - GeneOrder: 0
+    AttributeList:
+    - Attribute: 0
+      Strength: 3
+    - Attribute: 4
+      Strength: -2
+  - GeneOrder: 6
     name: GangFingers
     sprite: {fileID: 21300000, guid: b018087d1d7abd04d91aaee68601bc0d, type: 3}
-    AttributeList: []
+    AttributeList:
+    - Attribute: 3
+      Strength: 1
   GenePart: 3

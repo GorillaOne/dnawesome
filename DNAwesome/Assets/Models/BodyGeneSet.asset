@@ -15,10 +15,25 @@ MonoBehaviour:
   - GeneOrder: 0
     name: RoundBody
     sprite: {fileID: 21300000, guid: 73f1fcf0fafe7dd4c891e690c4513be6, type: 3}
+    AttributeList:
+    - Attribute: 3
+      Strength: 1
   - GeneOrder: 1
     name: TankBody
     sprite: {fileID: 21300000, guid: 4f5fcc550399b704a8e3a72e2f84d111, type: 3}
+    AttributeList:
+    - Attribute: 5
+      Strength: 1
+    - Attribute: 1
+      Strength: 1
+    - Attribute: 5
+      Strength: -1
   - GeneOrder: 2
     name: Sexy
     sprite: {fileID: 21300000, guid: fb4284704b2fcd34e8cb16b62866065e, type: 3}
+    AttributeList:
+    - Attribute: 0
+      Strength: 3
+    - Attribute: 3
+      Strength: -2
   GenePart: 0

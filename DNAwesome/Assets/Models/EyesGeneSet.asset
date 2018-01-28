@@ -15,10 +15,29 @@ MonoBehaviour:
   - GeneOrder: 0
     name: Normal
     sprite: {fileID: 21300000, guid: ef90731dc860cf24ab889a9937432748, type: 3}
+    AttributeList:
+    - Attribute: 3
+      Strength: 1
+    - Attribute: 2
+      Strength: 1
+    - Attribute: 0
+      Strength: -1
   - GeneOrder: 1
     name: Anime
     sprite: {fileID: 21300000, guid: b83acecb4ae4f0c4cae4a1994251ac2c, type: 3}
+    AttributeList:
+    - Attribute: 5
+      Strength: 2
+    - Attribute: 1
+      Strength: -1
   - GeneOrder: 1
     name: Angry
     sprite: {fileID: 21300000, guid: 9eccbdec65eed29498d6109f62043455, type: 3}
+    AttributeList:
+    - Attribute: 0
+      Strength: 1
+    - Attribute: 1
+      Strength: 1
+    - Attribute: 5
+      Strength: -1
   GenePart: 2
