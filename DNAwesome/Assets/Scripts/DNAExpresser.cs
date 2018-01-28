@@ -8,11 +8,8 @@ namespace DNAwesome
 {
 	public class DNAExpresser : MonoBehaviour
 	{
-
-		public Text A;
-		public Text B;
-		public Text C;
 		public DNAController DNAController;
+		public Text DNADisplay;
 
 		private void Awake()
 		{
@@ -40,18 +37,14 @@ namespace DNAwesome
 					return a.GeneOrder.CompareTo(b.GeneOrder);
 				}); 
 			}
-			List<Text> myTextsBringAllTheBoysToTheYard = new List<Text>();
-			myTextsBringAllTheBoysToTheYard.Add(A);
-			myTextsBringAllTheBoysToTheYard.Add(B);
-			myTextsBringAllTheBoysToTheYard.Add(C); 
-
+			DNADisplay.text = "\n " + this.gameObject.name; 
 			for(int i = 0; i < dna.GeneList.Count; i++)
 			{
-				var text = myTextsBringAllTheBoysToTheYard[i];
+				
 				var geneList = dna.GeneList[i];
 				var allele1 = dna.GeneList[i].AlleleList[0];
 				var allele2 = dna.GeneList[i].AlleleList[1];
-				text.text = allele1.name + allele1.GeneOrder + "   " + allele2.name + allele2.GeneOrder; 
+				DNADisplay.text += "\n" + geneList.GeneSet.name + ": " + allele1.name + allele1.GeneOrder + "   " + allele2.name + allele2.GeneOrder; 
 			}
 		}
 	}
