@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using DNAwesome.Models;
+using UnityEngine;
 
 namespace DNAwesome
 {
@@ -14,6 +15,8 @@ namespace DNAwesome
 		DNAController _playerController;
 		DNAController _otherController;
 		public Canvas Canvas;
+
+		public PlanetFightResultVisualizer PlanetVisualizer; 
 
 		InterfaceState _currentInterfaceState;
 		InterfaceState CurrentInterfaceState
@@ -84,7 +87,12 @@ namespace DNAwesome
 
 		public void OnFightClick()
 		{
-			CurrentInterfaceState = InterfaceState.World; 
+			var model = PlanetModel.GeneratePlanet(PlanetDifficulty.BabyMode); 
+			CurrentInterfaceState = InterfaceState.World;
+			
+			PlanetVisualizer.result = model.FightMe(_otherController.DNA);
+			PlanetVisualizer.enabled = true;
+
 		}
 
 		private void SetStateValues(bool intro, bool evolution, bool world)
