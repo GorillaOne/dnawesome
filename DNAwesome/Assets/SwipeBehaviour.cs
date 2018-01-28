@@ -66,15 +66,15 @@ public class SwipeBehaviour : MonoBehaviour, IDragHandler, IBeginDragHandler, IE
         {
             if (transform.localPosition.x - StartPosition.x < 0)
             {
-                Debug.Log("Rejected");
-                Reject.Invoke();
+                Debug.Log("Mate!!!");
+                Like.Invoke();
                 flyoff = true;
                 FlyoffSecond *= -1;
             }
             else
             {
-                Debug.Log("Mate!!!");
-                Like.Invoke();
+                Debug.Log("Rejected");
+                Reject.Invoke();
                 flyoff = true;
             }
         }
