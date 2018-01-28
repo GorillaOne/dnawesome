@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: ArmGeneSet
   m_EditorClassIdentifier: 
   allAlleles:
-  - GeneOrder: 0
+  - GeneOrder: 4
     name: PincerArms
     sprite: {fileID: 21300000, guid: 06f84f705afe08f47aa4b8ef64bf7206, type: 3}
   - GeneOrder: 1
@@ -21,4 +21,10 @@ MonoBehaviour:
   - GeneOrder: 2
     name: Hooves
     sprite: {fileID: 21300000, guid: 3c0b2bdc4377a5f4f9cbeea5ce19a1be, type: 3}
+  - GeneOrder: 3
+    name: Tentacles
+    sprite: {fileID: 21300000, guid: b26d881ff6a29c64a8714d0c3afc39d4, type: 3}
+  - GeneOrder: 0
+    name: BeefyArms
+    sprite: {fileID: 21300000, guid: 278d66d79cba451478a288a9c2c44df2, type: 3}
   GenePart: 3

@@ -1,19 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class GameSceneController : MonoBehaviour
+namespace DNAwesome
 {
-	
-	// Use this for initialization
-	void Start()
+	public class GameSceneController : MonoBehaviour
 	{
+		public GameObject PlayerGO; 
+		public GameObject OtherGO; 
+		DNAController _playerController;
+		DNAController _otherController;
 
-	}
 
-	// Update is called once per frame
-	void Update()
-	{
+
+		// Use this for initialization
+		void Start()
+		{
+			_playerController = PlayerGO.GetComponent<DNAController>();
+			_playerController.ResetDNA(); 
+
+			_otherController = OtherGO.GetComponent<DNAController>();
+			_otherController.ResetDNA(); 
+		}
+
+		// Update is called once per frame
+		void Update()
+		{
+
+		}
+
+		public void OnAcceptClick()
+		{
+			_playerController.SmashDNA(_otherController.DNA);
+			_otherController.ResetDNA(); 
+		}
+
+		public void OnRejectClick()
+		{
+			_otherController.ResetDNA();
+		}
+
 
 	}
 }
+

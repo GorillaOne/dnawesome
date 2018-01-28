@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: LegsGeneSet
   m_EditorClassIdentifier: 
   allAlleles:
-  - GeneOrder: 0
+  - GeneOrder: 4
     name: RaptorLegs
     sprite: {fileID: 21300000, guid: 13227dd80d8b4a746987df2469b4a3dc, type: 3}
   - GeneOrder: 1
@@ -21,4 +21,10 @@ MonoBehaviour:
   - GeneOrder: 2
     name: CrabLegs
     sprite: {fileID: 21300000, guid: 561be424022d71f478d0486cd8767094, type: 3}
+  - GeneOrder: 3
+    name: MechLegs
+    sprite: {fileID: 21300000, guid: 68b1ba918d406f84f99b248e7f187d4d, type: 3}
+  - GeneOrder: 0
+    name: ChickenLegs
+    sprite: {fileID: 21300000, guid: 20ee28d750cf64c41a8d82e0b3b762b5, type: 3}
   GenePart: 4
