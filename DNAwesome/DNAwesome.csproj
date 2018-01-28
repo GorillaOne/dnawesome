@@ -308,6 +308,7 @@
     <Compile Include="Assets\Scripts\DNAController.cs" />
     <Compile Include="Assets\Scripts\DNAExpresser.cs" />
     <Compile Include="Assets\Scripts\GameSceneController.cs" />
+    <Compile Include="Assets\SwipeBehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
