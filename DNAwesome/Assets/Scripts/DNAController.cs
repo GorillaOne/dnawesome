@@ -17,20 +17,27 @@ namespace DNAwesome
 			}
 		}
 		public event EventHandler DNAUpdated;
-		public CompleteGenome CompleteGenome; 
+		public CompleteGenome CompleteGenome;
 
 		// Use this for initialization
 		void Start()
 		{
-			_myDna = GenerateDefaultDNA();
-			var otherDna = GenerateDefaultDNA();
-			SmashDNA(otherDna); 
+
 		}
 
 		// Update is called once per frame
 		void Update()
 		{
 
+		}
+
+		public void ResetDNA()
+		{
+			_myDna = GenerateDefaultDNA();
+			if (DNAUpdated != null)
+			{
+				DNAUpdated(this, new EventArgs());
+			}
 		}
 
 		public void SetDNA(DnaModel dnaModel)
@@ -61,10 +68,10 @@ namespace DNAwesome
 				var newGene = new GeneModel();
 				newGene.AlleleList.Add(SplitTheGene(myGene));
 				newGene.AlleleList.Add(SplitTheGene(theirGene));
-
+				newGene.GeneSet = myGene.GeneSet; 
 				newDna.GeneList.Add(newGene);
 			}
-
+			_myDna = newDna;
 			if (DNAUpdated != null)
 			{
 				DNAUpdated.Invoke(this, new EventArgs());
@@ -80,8 +87,8 @@ namespace DNAwesome
 
 		private DnaModel GenerateDefaultDNA()
 		{
-			DnaModel newDna = new DnaModel(); 
-			foreach(var set in CompleteGenome.TheGenome)
+			DnaModel newDna = new DnaModel();
+			foreach (var set in CompleteGenome.TheGenome)
 			{
 				int max = set.allAlleles.Count;
 				var allele1 = UnityEngine.Random.Range(0, max);
@@ -89,10 +96,10 @@ namespace DNAwesome
 				var newGene = new GeneModel();
 				newGene.AlleleList.Add(set.allAlleles[allele1]);
 				newGene.AlleleList.Add(set.allAlleles[allele2]);
-                newGene.GeneSet = set;
-                newDna.GeneList.Add(newGene); 
+				newGene.GeneSet = set;
+				newDna.GeneList.Add(newGene);
 			}
-			return newDna; 
+			return newDna;
 		}
 	}
 }
