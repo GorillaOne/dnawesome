@@ -305,11 +305,14 @@
     <Compile Include="Assets\Models\Model.cs" />
     <Compile Include="Assets\Models\PlanetModel.cs" />
     <Compile Include="Assets\MonsterDNADataExpressor.cs" />
+    <Compile Include="Assets\PlanetFightResultVisualizer.cs" />
     <Compile Include="Assets\PlanetFightTest.cs" />
     <Compile Include="Assets\Scripts\CharacterLogic.cs" />
     <Compile Include="Assets\Scripts\DNAController.cs" />
     <Compile Include="Assets\Scripts\DNAExpresser.cs" />
     <Compile Include="Assets\Scripts\GameSceneController.cs" />
+    <Compile Include="Assets\StatFightDisplay.cs" />
+    <Compile Include="Assets\StatResultVisualizer.cs" />
     <Compile Include="Assets\SwipeBehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

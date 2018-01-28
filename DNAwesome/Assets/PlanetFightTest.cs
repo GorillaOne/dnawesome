@@ -11,6 +11,7 @@ namespace DNAwesome.Models
         public PlanetModel planet;
         public DnaModel DNA;
         public PlanetFightResult result;
+        public PlanetFightResultVisualizer visualizer;
 
         // Use this for initialization
         void Start() {
@@ -22,6 +23,9 @@ namespace DNAwesome.Models
             if (run)
             {
                 RunPlanet();
+                visualizer.result = result;
+                visualizer.enabled = false;
+                visualizer.enabled = true;
                 run = false;
             }
         }
