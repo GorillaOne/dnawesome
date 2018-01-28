@@ -82,7 +82,10 @@ namespace DNAwesome
 			_otherController.ResetDNA();
 		}
 
-
+		public void OnFightClick()
+		{
+			CurrentInterfaceState = InterfaceState.World; 
+		}
 
 		private void SetStateValues(bool intro, bool evolution, bool world)
 		{
