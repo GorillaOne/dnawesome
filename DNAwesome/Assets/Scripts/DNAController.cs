@@ -18,11 +18,12 @@ namespace DNAwesome
 		}
 		public event EventHandler DNAUpdated;
 		public CompleteGenome CompleteGenome;
+		public Dictionary<AttributeType, int> CharacterAttributes = new Dictionary<AttributeType, int>();
 
 		// Use this for initialization
 		void Start()
 		{
-
+			LoadDefaultAttributes();
 		}
 
 		// Update is called once per frame
@@ -34,6 +35,7 @@ namespace DNAwesome
 		public void ResetDNA()
 		{
 			_myDna = GenerateDefaultDNA();
+			SumAttributes(); 
 			if (DNAUpdated != null)
 			{
 				DNAUpdated(this, new EventArgs());
@@ -43,6 +45,7 @@ namespace DNAwesome
 		public void SetDNA(DnaModel dnaModel)
 		{
 			_myDna = dnaModel;
+			SumAttributes();
 		}
 
 		public void SmashDNA(DnaModel otherDna)
@@ -68,10 +71,12 @@ namespace DNAwesome
 				var newGene = new GeneModel();
 				newGene.AlleleList.Add(SplitTheGene(myGene));
 				newGene.AlleleList.Add(SplitTheGene(theirGene));
-				newGene.GeneSet = myGene.GeneSet; 
+				newGene.GeneSet = myGene.GeneSet;
 				newDna.GeneList.Add(newGene);
 			}
 			_myDna = newDna;
+			SumAttributes(); 
+
 			if (DNAUpdated != null)
 			{
 				DNAUpdated.Invoke(this, new EventArgs());
@@ -101,6 +106,44 @@ namespace DNAwesome
 			}
 			return newDna;
 		}
+
+		private void LoadDefaultAttributes()
+		{
+			foreach (var value in Enum.GetNames(typeof(AttributeType)))
+			{
+				var attType = (AttributeType)Enum.Parse(typeof(AttributeType), value);
+				CharacterAttributes.Add(attType, 0);
+			}
+		}
+
+		private void SumAttributes()
+		{
+			ClearAttributes(); 
+
+			foreach (var gene in _myDna.GeneList)
+			{
+				gene.AlleleList.Sort((a, b) =>
+				{
+					return a.GeneOrder.CompareTo(b.GeneOrder);
+				});
+
+				foreach (var att in gene.AlleleList[0].AttributeList)
+				{
+					CharacterAttributes[att.Attribute] += att.Strength;
+				}
+			}
+		}
+
+		private void ClearAttributes()
+		{
+			List<AttributeType> keys = new List<AttributeType>(CharacterAttributes.Keys); 
+
+			foreach (var key in keys)
+			{
+				CharacterAttributes[key] = 0;
+			}
+		}
+
 	}
 }
 
