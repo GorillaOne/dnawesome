@@ -16,7 +16,7 @@
    version="1.1"
    id="svg833"
    sodipodi:docname="Tripod.svg"
-   inkscape:export-filename="C:\Development\dnawesome\DNAwesome\Assets\Parts\Legs\ChickenLegs.png"
+   inkscape:export-filename="C:\Development\dnawesome\DNAwesome\Assets\Parts\Legs\Tripod.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
@@ -3563,7 +3563,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/9k=
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Fill"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:#ffffff;fill-opacity:1;stroke-width:0.01321182"
